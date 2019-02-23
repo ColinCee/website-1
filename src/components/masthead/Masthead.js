@@ -1,13 +1,11 @@
 import React from 'react'
-import Menu from '../menu/Menu'
+import Content from './Content'
 import './masthead.css'
 
 const Masthead = () => {
   return (
-    <div className="ui inverted vertical masthead center aligned segment">
-      <div className="ui container">
-        <Menu/>
-      </div>
+    <div id="masthead" className="ui inverted masthead segment bg6">
+      <Content/>
     </div>
   )
 }

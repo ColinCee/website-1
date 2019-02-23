@@ -1,0 +1,9 @@
+#masthead-content .name {
+    font-size: 1.75em;
+    display: block;
+}
+
+#masthead-content button {
+    margin: 0 auto;
+    display: block;
+}

@@ -1,4 +1,14 @@
-.masthead {
-    min-height: 700px;
-    background-image: url('./network_wallpaper.jpg') !important;
+#masthead {
+    position: relative;
+    margin: 0;
+    border-radius: 0;
+}
+
+#masthead .ui.container {
+    position: relative;
+    min-height: 600px;
+    vertical-align: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
