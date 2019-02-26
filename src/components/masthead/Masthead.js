@@ -1,12 +1,42 @@
 import React from 'react'
-import Content from './Content'
+import semanticLogo from './semantic-ui.png'
 import './masthead.css'
+import { Button, Container, Divider, Grid, Header, Icon, Image, Segment } from 'semantic-ui-react'
 
 const Masthead = () => {
   return (
-    <div id="masthead" className="ui inverted masthead segment bg6">
-      <Content/>
-    </div>
+    <Segment id="masthead" inverted>
+      <Container id="masthead-container">
+        <Grid id="masthead-grid" columns={'equal'} divided>
+          <Grid.Column>
+            <Header as='h1' inverted>
+              <span className="name">Colin Cheung</span>
+            </Header>
+            <Header as='h3' inverted>
+              <span>A React Playground</span>
+            </Header>
+            <div className="ui hidden divider"/>
+            <Button color='linkedin'>
+              <Icon name='linkedin'/> LinkedIn
+            </Button>
+          </Grid.Column>
+          <Grid.Column className="right-column" only="computer" textAlign='right'>
+            <Header as="h3" inverted>
+              Created using Semantic UI React
+            </Header>
+            <Divider hidden/>
+            <Image
+              id="semantic-ui-logo"
+              src={semanticLogo}
+              as='a'
+              size='mini'
+              href='https://github.com/Semantic-Org/Semantic-UI-React'
+              target='_blank'
+            />
+          </Grid.Column>
+        </Grid>
+      </Container>
+    </Segment>
   )
 }
 

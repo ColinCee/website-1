@@ -1,11 +1,11 @@
 import React from 'react'
 import Masthead from './masthead/Masthead'
-import Menu from './menu/Menu'
+import NavBar from './navbar/NavBar'
 
 const App = () => {
   return (
-    <div className="pusher">
-      <Menu/>
+    <div>
+      <NavBar/>
       <Masthead/>
     </div>
   )

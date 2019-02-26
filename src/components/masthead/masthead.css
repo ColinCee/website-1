@@ -2,13 +2,35 @@
     position: relative;
     margin: 0;
     border-radius: 0;
+    /*background: url("./wallpaper.jpg") no-repeat center;*/
+    /*background-size: cover;*/
 }
 
-#masthead .ui.container {
+#masthead {
+    min-height: 500px;
+}
+
+#masthead-grid {
     position: relative;
-    min-height: 600px;
-    vertical-align: top;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    top: 200px;
+}
+
+#masthead-grid .name {
+    font-size: 1.75em;
+}
+
+
+@media only screen and (max-width: 700px) {
+    #masthead {
+        min-height: 300px;
+    }
+
+    #masthead-grid {
+        position: relative;
+        top: 100px;
+    }
+
+    #masthead-grid .name {
+        font-size: 1em;
+    }
 }
