@@ -1,11 +1,11 @@
 import React from 'react'
-import { Container, Grid, Header, Icon } from 'semantic-ui-react'
+import { Container, Divider, Grid, Header, Icon } from 'semantic-ui-react'
 import './content.css'
 
 const Content = () => {
-  return (
-    <Container id="home-content">
-      <Grid columns={3} stackable divided>
+  const renderIntroGrid = () => {
+    return (
+      <Grid columns={3} stackable>
         <Grid.Row>
           <Grid.Column>
             <Header as='a' href="https://www.strath.ac.uk/">
@@ -35,6 +35,16 @@ const Content = () => {
           </Grid.Column>
         </Grid.Row>
       </Grid>
+    )
+  }
+
+  return (
+    <Container id="home-content">
+      {renderIntroGrid()}
+      <Divider/>
+      <Header as='h2'>
+        Projects
+      </Header>
     </Container>
   )
 }

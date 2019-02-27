@@ -1,6 +1,6 @@
 import React from 'react'
 import Masthead from './masthead/Masthead'
-import NavBar from '../components/navbar/NavBar'
+import NavBar from './navbar/NavBar'
 import Content from './content/Content'
 
 const Home = () => {

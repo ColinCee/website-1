@@ -1,6 +1,7 @@
 import React from 'react'
 import './navbar.css'
 import { Container, Menu } from 'semantic-ui-react'
+import { Link } from 'react-router-dom'
 
 class NavBar extends React.Component {
   constructor (props) {
@@ -23,9 +24,9 @@ class NavBar extends React.Component {
             onClick={this.handleItemClick}
           />
           <Menu.Item
-            name='test'
-            active={activeItem === 'test'}
-            onClick={this.handleItemClick}
+            as={Link}
+            name='projects'
+            to='projects'
           />
         </Menu>
       </Container>
