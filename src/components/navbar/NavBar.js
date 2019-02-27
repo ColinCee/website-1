@@ -15,22 +15,20 @@ class NavBar extends React.Component {
   render () {
     const { activeItem } = this.state
     return (
-      <div>
-        <Container>
-          <Menu id="navbar" pointing inverted secondary>
-            <Menu.Item
-              name='home'
-              active={activeItem === 'home'}
-              onClick={this.handleItemClick}
-            />
-            <Menu.Item
-              name='test'
-              active={activeItem === 'test'}
-              onClick={this.handleItemClick}
-            />
-          </Menu>
-        </Container>
-      </div>
+      <Container>
+        <Menu id="navbar" pointing inverted secondary>
+          <Menu.Item
+            name='home'
+            active={activeItem === 'home'}
+            onClick={this.handleItemClick}
+          />
+          <Menu.Item
+            name='test'
+            active={activeItem === 'test'}
+            onClick={this.handleItemClick}
+          />
+        </Menu>
+      </Container>
     )
   }
 }
