@@ -27,9 +27,10 @@ const Content = () => {
           </Grid.Column>
           <Grid.Column>
             <Header as='h2'>
-              Classification
+              Dissertation
               <Header.Subheader>
-                BEng 1st
+                <a href={process.env.PUBLIC_URL + '/Report.pdf'}>Investigating learning type algorithms for video
+                  games</a>
               </Header.Subheader>
             </Header>
           </Grid.Column>
