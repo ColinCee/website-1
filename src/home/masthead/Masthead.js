@@ -1,7 +1,6 @@
 import React from 'react'
-import semanticLogo from './semantic-ui.png'
 import './masthead.css'
-import { Button, Container, Divider, Grid, Header, Icon, Image, Segment } from 'semantic-ui-react'
+import { Button, Container, Grid, Header, Icon, Image, Segment } from 'semantic-ui-react'
 
 const Masthead = () => {
   return (
@@ -21,18 +20,19 @@ const Masthead = () => {
             </Button>
           </Grid.Column>
           <Grid.Column className="right-column" only="computer" textAlign='right'>
-            <Header as="h3" inverted>
-              Created using Semantic UI React
-            </Header>
-            <Divider hidden/>
-            <Image
-              id="semantic-ui-logo"
-              src={semanticLogo}
-              as='a'
-              size='mini'
-              href='https://github.com/Semantic-Org/Semantic-UI-React'
-              target='_blank'
-            />
+            <div className="bottom-aligned right-aligned">
+              <Header as="h3" inverted>
+                Created using Semantic UI React
+                <Image
+                  id="semantic-ui-logo"
+                  src={process.env.PUBLIC_URL + '/semantic-ui.png'}
+                  as='a'
+                  size='mini'
+                  href='https://github.com/Semantic-Org/Semantic-UI-React'
+                  target='_blank'
+                />
+              </Header>
+            </div>
           </Grid.Column>
         </Grid>
       </Container>

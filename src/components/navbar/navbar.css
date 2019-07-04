@@ -1,0 +1,10 @@
+#navbar {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-left: 5em;
+    border-bottom: none;
+}
+
+.dark {
+    background: #1b1c1d;
+}

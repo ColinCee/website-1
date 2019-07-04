@@ -7,18 +7,29 @@
 }
 
 #masthead {
-    min-height: 500px;
-}
-
-#masthead-grid {
-    position: relative;
-    top: 200px;
+    display: flex;
+    align-items: center;
+    height: 400px;
 }
 
 #masthead-grid .name {
     font-size: 1.75em;
 }
 
+#semantic-ui-logo {
+    margin-left: 1em;
+    margin-bottom: 7px;
+}
+
+.bottom-aligned {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.right-aligned {
+    justify-content: flex-end;
+}
 
 @media only screen and (max-width: 700px) {
     #masthead {
