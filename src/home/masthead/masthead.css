@@ -7,12 +7,9 @@
 }
 
 #masthead {
-    min-height: 500px;
-}
-
-#masthead-grid {
-    position: relative;
-    top: 200px;
+    display: flex;
+    align-items: center;
+    height: 400px;
 }
 
 #masthead-grid .name {
