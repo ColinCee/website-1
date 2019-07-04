@@ -1,6 +1,6 @@
 import React from 'react'
 import './navbar.css'
-import { Container, Menu } from 'semantic-ui-react'
+import { Menu } from 'semantic-ui-react'
 import { Link, withRouter } from 'react-router-dom'
 
 class NavBar extends React.Component {
@@ -10,7 +10,7 @@ class NavBar extends React.Component {
 
   render () {
     return (
-      <Container>
+      <div className={this.props.inverted ? 'dark' : null}>
         <Menu id="navbar" pointing secondary inverted={this.props.inverted} size='huge'>
           <Menu.Item
             as={Link}
@@ -25,7 +25,7 @@ class NavBar extends React.Component {
             active={this.isActive('/projects')}
           />
         </Menu>
-      </Container>
+      </div>
     )
   }
 }

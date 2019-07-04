@@ -1,5 +1,4 @@
 import React from 'react'
-import semanticLogo from './semantic-ui.png'
 import './masthead.css'
 import { Button, Container, Grid, Header, Icon, Image, Segment } from 'semantic-ui-react'
 
@@ -26,7 +25,7 @@ const Masthead = () => {
                 Created using Semantic UI React
                 <Image
                   id="semantic-ui-logo"
-                  src={semanticLogo}
+                  src={process.env.PUBLIC_URL + '/semantic-ui.png'}
                   as='a'
                   size='mini'
                   href='https://github.com/Semantic-Org/Semantic-UI-React'
