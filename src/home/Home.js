@@ -1,12 +1,12 @@
 import React from 'react'
 import Masthead from './masthead/Masthead'
-import NavBar from './navbar/NavBar'
+import NavBar from '../components/navbar/NavBar'
 import Content from './content/Content'
 
 const Home = () => {
   return (
     <div id="home">
-      <NavBar/>
+      <NavBar inverted/>
       <Masthead/>
       <Content/>
     </div>
