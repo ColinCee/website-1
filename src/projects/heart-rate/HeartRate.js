@@ -15,16 +15,19 @@ class HeartRate extends React.Component {
   constructor (props) {
     super(props)
 
-    const fusionTable = new FusionCharts.DataStore().createDataTable(sampleData, schema)
+    const fusionTable = new FusionCharts.DataStore().createDataTable(
+      sampleData,
+      schema
+    )
     this.state = {
       timeseriesDs: {
         type: 'timeseries',
         renderAt: 'container',
-        width: '100%',
+        width: '90%',
         height: '500',
         dataSource: {
           caption: { text: 'Heart Rate vs Time - 22/02/19' },
-          data: fusionTable,
+          data: fusionTable
         }
       }
     }
@@ -33,10 +36,9 @@ class HeartRate extends React.Component {
   render () {
     return (
       <Container>
-        <ReactFC {...this.state.timeseriesDs}/>
+        <ReactFC {...this.state.timeseriesDs} />
       </Container>
     )
   }
 }
-
 export default HeartRate
