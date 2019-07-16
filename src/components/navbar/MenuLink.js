@@ -11,9 +11,11 @@ class MenuLink extends React.Component {
 
   render () {
     return (
-      <a className={this.getClass()}
-         onClick={this.onClick}
-         href={this.props.link}>
+      <a
+        className={this.getClass()}
+        onClick={this.onClick}
+        href={this.props.link}
+      >
         {this.props.text}
       </a>
     )

@@ -8,12 +8,10 @@ const Content = () => {
       <Grid columns={3} stackable>
         <Grid.Row>
           <Grid.Column>
-            <Header as='a' href="https://www.strath.ac.uk/">
-              <Header as="h2">
+            <Header as='a' href='https://www.strath.ac.uk/'>
+              <Header as='h2'>
                 <Icon name='student'/>
-                <Header.Content>
-                  University of Strathclyde
-                </Header.Content>
+                <Header.Content>University of Strathclyde</Header.Content>
               </Header>
             </Header>
           </Grid.Column>
@@ -29,8 +27,9 @@ const Content = () => {
             <Header as='h2'>
               Dissertation
               <Header.Subheader>
-                <a href={process.env.PUBLIC_URL + '/Report.pdf'}>Investigating learning type algorithms for video
-                  games</a>
+                <a href={process.env.PUBLIC_URL + '/Report.pdf'}>
+                  Investigating learning type algorithms for video games
+                </a>
               </Header.Subheader>
             </Header>
           </Grid.Column>
@@ -40,12 +39,10 @@ const Content = () => {
   }
 
   return (
-    <Container id="home-content">
+    <Container id='home-content'>
       {renderIntroGrid()}
       <Divider/>
-      <Header as='h2'>
-        Projects
-      </Header>
+      <Header as='h2'>Projects</Header>
     </Container>
   )
 }
