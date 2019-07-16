@@ -4,9 +4,9 @@ import HeartRate from './heart-rate/HeartRate'
 
 const Projects = () => {
   return (
-    <div id="projects">
-      <NavBar/>
-      <HeartRate/>
+    <div id='projects'>
+      <NavBar />
+      <HeartRate />
     </div>
   )
 }

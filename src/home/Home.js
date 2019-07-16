@@ -5,10 +5,10 @@ import Content from './content/Content'
 
 const Home = () => {
   return (
-    <div id="home">
-      <NavBar inverted/>
-      <Masthead/>
-      <Content/>
+    <div id='home'>
+      <NavBar inverted />
+      <Masthead />
+      <Content />
     </div>
   )
 }
